@@ -13,9 +13,9 @@
     $cabeca = "From: murilloantoniobento@gmail.com"."\n"."Reply-to: ".$email."\n"."X=Mailer:PHP/".phpversion()
 
     if(mail($destino,$assunto,$corpo,$cabeca)){
-        echo '<script>alert("E-mail enviado com sucesso!");</script>';
+        echo("E-mail enviado com sucesso!");
     }else{
-        echo '<script>alert("Houve um erro ao enviar o e-mail!");</script>';
+        echo("Houve um erro ao enviar o e-mail!");
     }
 
 ?>
